@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import safariTourImage from "@/assets/image-3.jpeg";
+import SneakPeek from "./SneakPeek";
 
 const highlights = ["Just 200 metres from the spectacular Kazinga Channel in Queen Elizabeth National Park.", "Private balconies and self-contained bathrooms", "Incredible wildlife encounters", "Restaurant and bar", "Nature, relaxation, and unforgettable memories"];
 const AboutPreview = () => (
@@ -11,6 +12,6 @@ const AboutPreview = () => (
 
 Welcome to Tembo Safari Lodge, Katunguru - where comfort meets the wild, and every stay becomes a story worth telling.
 </p><ul className="mb-9 space-y-4">{highlights.map(item => <li key={item} className="flex items-center gap-3"><CheckCircle className="shrink-0 text-secondary" size={22} /><span>{item}</span></li>)}</ul><Link to="/about" className="safari-btn-primary gap-2">Discover the lodge <ArrowRight size={19} /></Link></motion.div>
-  </div></section>
+  </div><SneakPeek /></section>
 );
 export default AboutPreview;
