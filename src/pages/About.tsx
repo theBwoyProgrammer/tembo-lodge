@@ -9,10 +9,10 @@ import sunsetImage from "@/assets/image-6.jpeg";
 import diningImage from "@/assets/image-7.jpeg";
 
 const features = [
-  { icon: BedDouble, title: "A place to return to", text: "Traditional grass-thatched cottages and standard rooms, with private balconies, mosquito nets, self-contained bathrooms, and hot showers." },
-  { icon: Waves, title: "The channel, close by", text: "The Kazinga Channel lies just 200 metres away, placing water, birdlife, and the rhythms of the park within the lodge landscape." },
-  { icon: Utensils, title: "A warm meal at day's end", text: "Return from the game tracks to local and continental dishes in the lodge restaurant, with a bar open to guests." },
-  { icon: Bird, title: "Days shaped by the wild", text: "Plan boat cruises, guided game drives, nature walks, bird watching, biking, and fishing tours from Katunguru." },
+  { icon: BedDouble, title: "A place to return to", text: "Return from a day of adventure to the warmth and tranquillity of Tembo Safari Lodge. Choose from our traditional grass-thatched cottages and comfortable standard rooms, thoughtfully designed to offer a relaxing retreat in the heart of Queen Elizabeth National Park." },
+  { icon: Waves, title: "The Kazinga Channel, close by", text: "Just 200 metres from Tembo Safari Lodge, the Kazinga Channel offers unforgettable encounters with hippos, remarkable birdlife, and the wild beauty of Queen Elizabeth National Park. At Tembo, nature is part of your stay, bringing you closer to Uganda’s extraordinary wilderness." },
+  { icon: Utensils, title: "Savour the Flavours. Embrace the Wild.", text: "After exploring Queen Elizabeth National Park, return to Tembo Safari Lodge for delicious meals, warm hospitality, and a relaxing atmosphere. Share stories, savour every bite, and make dining part of your safari experience." },
+  { icon: Bird, title: "Wake Up to the Wild. Live the Adventure.", text: "Explore Queen Elizabeth National Park from Tembo Safari Lodge. Discover incredible wildlife, breathtaking landscapes, and unforgettable adventures in the heart of the wild.." },
 ];
 
 const About = () => (
@@ -25,8 +25,8 @@ const About = () => (
         <div className="safari-container relative z-10 w-full pb-20 pt-36 md:pb-28">
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="mb-6 inline-block text-sm font-semibold uppercase text-secondary">The Tembo story</span>
-            <h1 className="mb-6 max-w-3xl font-display text-5xl font-bold leading-tight md:text-7xl">A place between the journey and the wild.</h1>
-            <p className="max-w-2xl text-xl leading-relaxed text-primary-foreground/90">Tembo is a home base for discovering Queen Elizabeth National Park, with the Kazinga Channel woven into the view and the next adventure never far away.</p>
+            <h1 className="mb-6 max-w-3xl font-display text-5xl font-bold leading-tight md:text-7xl">A Place Between the Wild and Wonder.</h1>
+            <p className="max-w-2xl text-xl leading-relaxed text-primary-foreground/90">Wake up to nature, explore the Kazinga Channel, and discover the wildlife that makes Queen Elizabeth National Park unforgettable. At Tembo Safari Lodge, comfort meets the wild and every stay becomes a lasting memory.</p>
           </motion.div>
         </div>
       </section>
@@ -35,13 +35,13 @@ const About = () => (
         <div className="safari-container grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
           <motion.div initial={{ opacity: 0, x: -28 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <span className="safari-badge mb-5">Why Tembo exists</span>
-            <h2 className="safari-heading mb-7">More than the moment you see an animal</h2>
+            <h2 className="safari-heading mb-7">To Bring You Closer to the Wild</h2>
             <div className="space-y-5 safari-text">
-              <p>A safari is also the road through Uganda. The first light over the savannah. The sound of hippos from the water. The conversations after a long game drive.</p>
-              <p>It is the meal you remember, the people who welcomed you, and the quiet hour when there is nowhere else you need to be.</p>
-              <p>Tembo Safari Lodge was created to give travellers a comfortable place from which to experience those moments—close to the wilderness, connected to the channel, and ready for whatever the next day brings.</p>
+              <p>Tembo Safari Lodge exists to make the experience of discovering Uganda's wilderness more welcoming, meaningful, and memorable.</p>
+              <p>We bring together warm hospitality, delicious dining, and nature’s tranquillity for a meaningful and memorable Ugandan safari experience.</p>
+              <p>Discover extraordinary wildlife, breathtaking landscapes, and local culture while creating lasting memories in the heart of Uganda’s wilderness.</p>
             </div>
-            <p className="mt-8 border-l-2 border-secondary pl-6 font-display text-2xl font-bold text-primary">Come for the safari. Stay for the feeling of being here.</p>
+            <p className="mt-8 border-l-2 border-secondary pl-6 font-display text-2xl font-bold text-primary">Feel the Culture, Love the Stay</p>
           </motion.div>
           <motion.figure initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative overflow-hidden rounded-lg shadow-dramatic">
             <img src={sunsetImage} alt="Sunset over the Kazinga Channel from Tembo Safari Lodge" className="aspect-[4/5] w-full object-cover md:aspect-[5/4]" />
@@ -53,9 +53,13 @@ const About = () => (
       <section className="safari-section bg-muted">
         <div className="safari-container">
           <div className="mb-12 max-w-3xl">
-            <span className="safari-badge mb-5">Life at the lodge</span>
-            <h2 className="safari-heading mb-6">The rhythm of a day at Tembo Safari Lodge</h2>
-            <p className="safari-text">Leave early for the park, return to a quiet room and a warm meal, then watch the last light move across the channel landscape.</p>
+            <span className="safari-badge mb-5">The Tembo Experience</span>
+            <h2 className="safari-heading mb-6">A Day in the Rhythm of the Wild</h2>
+            <p className="safari-text">Every day unfolds to the rhythm of nature. Wake up to the sounds of the wilderness, explore the remarkable landscapes of Queen Elizabeth National Park, discover the beauty of the Kazinga Channel, and unwind as the African sun paints the horizon in golden hues.
+
+From the first light of dawn to the calm of evening, experience a stay where nature inspires, adventure awaits, and every moment becomes a memory.
+
+Tembo Safari Lodge: Feel the Culture, Love the Stay.</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {features.map((item, index) => (
@@ -77,10 +81,10 @@ const About = () => (
           </div>
           <div>
             <span className="mb-5 inline-block text-sm font-semibold uppercase text-secondary">Hospitality, naturally</span>
-            <h2 className="mb-7 font-display text-4xl font-bold md:text-5xl">The lodge is part of the safari.</h2>
+            <h2 className="mb-7 font-display text-4xl font-bold md:text-5xl">Where Every Moment Belongs to the Journey</h2>
             <div className="space-y-5 text-lg leading-relaxed text-primary-foreground/80">
-              <p>Here, rest is not separate from the journey. It is the pause between an early start and an afternoon on the water; between the dust of the game tracks and dinner overlooking the landscape.</p>
-              <p>The setting is simple and grounded in place: cottages among the greenery, tables ready for a shared meal, and the channel close enough to shape the mood of every day.</p>
+              <p>At Tembo Safari Lodge, the adventure doesn't end when you leave the wilderness. It simply takes on a different rhythm.</p>
+              <p>Tembo Safari Lodge is a welcoming retreat nestled in the natural beauty of Katunguru, right on the edge of Queen Elizabeth National Park and just 200 meters from the Kazinga Channel. The lodge features traditional cottages surrounded by lush greenery, relaxed dining, and an immersive wilderness experience where rest and safari seamlessly blend together.</p>
             </div>
           </div>
         </div>
@@ -90,12 +94,12 @@ const About = () => (
         <div className="safari-container">
           <div className="mb-12 max-w-2xl">
             <span className="safari-badge mb-4">Getting here</span>
-            <h2 className="safari-heading mb-5">Follow the road to Katunguru</h2>
-            <p className="safari-text">Find Tembo off the Ntungamo–Katunguru Road, inside Queen Elizabeth National Park.</p>
+            <h2 className="safari-heading mb-5">Your adventure to the wild starts here</h2>
+            <p className="safari-text">Ready to discover the beauty of Queen Elizabeth National Park? Follow the Ntungamo - Katunguru Road to Katunguru, where a warm welcome awaits at Tembo Safari Lodge. Tucked into the heart of the wilderness, Tembo is your invitation to slow down, reconnect with nature, and experience the magic of the African safari. Follow the road. Find your wild. Feel at home at Tembo.</p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="border-t-2 border-secondary pt-6"><MapPin className="mb-4 text-primary" /><h3 className="mb-2 text-xl font-bold">In the park</h3><p className="text-muted-foreground">Katunguru, Queen Elizabeth National Park, Uganda—just 200 metres from the Kazinga Channel.</p></div>
-            <div className="border-t-2 border-secondary pt-6"><Car className="mb-4 text-primary" /><h3 className="mb-2 text-xl font-bold">By road</h3><p className="text-muted-foreground">About 5–6 hours (384 km) from Kampala via Mbarara and Bushenyi.</p></div>
+            <div className="border-t-2 border-secondary pt-6"><MapPin className="mb-4 text-primary" /><h3 className="mb-2 text-xl font-bold">In the park</h3><p className="text-muted-foreground">Katunguru, Queen Elizabeth National Park, Uganda, just 200 metres from the Kazinga Channel.</p></div>
+            <div className="border-t-2 border-secondary pt-6"><Car className="mb-4 text-primary" /><h3 className="mb-2 text-xl font-bold">By road</h3><p className="text-muted-foreground">About 5 - 6 hours (384 km) from Kampala via Mbarara and Bushenyi.</p></div>
             <div className="border-t-2 border-secondary pt-6"><Plane className="mb-4 text-primary" /><h3 className="mb-2 text-xl font-bold">By air</h3><p className="text-muted-foreground">About 1 hour from Entebbe to Kasese Airstrip, followed by a short transfer.</p></div>
           </div>
         </div>
