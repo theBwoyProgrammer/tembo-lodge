@@ -13,7 +13,11 @@ const json = (body, status = 200) =>
     },
   });
 
-const apiBase = (env) => API_BASES[env.PESAPAL_ENV || "sandbox"] || API_BASES.sandbox;
+const apiBase = (env) => {
+  const environment = env.PESAPAL_ENV || "sandbox";
+  if (!API_BASES[environment]) throw new Error("PESAPAL_ENV must be sandbox or production.");
+  return API_BASES[environment];
+};
 
 const readJson = async (response, stage) => {
   const text = await response.text();
